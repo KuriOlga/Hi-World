@@ -1,0 +1,254 @@
+/* Base */
+* { box-sizing: border-box; }
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  background-color: #FFFFFF;
+  color: #222222;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Components */
+
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.name {
+  font-size: 3rem;
+  line-height: 1em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.description {
+  opacity: 0.5;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.headerNav {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+
+  display: flex;
+  align-items: center;
+}
+
+.headerNavLink {
+  transition: 0.1s;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.headerNavLink:hover {
+  color: #CE1F8B;
+  transform: scale(1.1);
+}
+
+.headerNavLink svg {
+  display: block;
+}
+
+.headerNavLink span {
+  display: block;
+  margin-left: 0.5rem;
+}
+
+.center {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.project {}
+
+/* Dog President */
+.project.dogPresident {
+  background-color: #DEFFEF;
+}
+
+.project.dogPresident .center {
+  display: flex;
+  align-items: flex-end;
+}
+
+.project.dogPresident
+.projectIllustration {
+  width: 66%;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
+.project.dogPresident
+.projectInfo {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 2rem;
+  width: 33%;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+.project.dogPresident
+.projectTitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.project.dogPresident
+.projectDescription {
+  margin-top: 0.5rem;
+}
+
+/* Stickers */
+.project.stickers {
+  margin: 5rem 0;
+  background-color: #ffffff;
+}
+
+.project.stickers .center {
+  max-width: 70rem;
+}
+
+.project.stickers
+.stickersRow {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project.stickers
+.sticker {
+  margin: 1rem;
+}
+
+.project.stickers
+.sticker img {
+  width: 100%;
+  height: auto;
+}
+
+.project.stickers
+.projectInfo {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.project.stickers
+.projectTitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.project.stickers
+.projectDescription {
+  margin-top: 0.5rem;
+}
+
+/* Geeks */
+.project.geeks {
+  padding: 5rem 0;
+  background-color: #010A41;
+}
+
+.project.geeks
+.center {
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project.geeks
+.geeksIllustrations {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project.geeks
+.geeksIllustration {
+  width: 50%;
+}
+
+.project.geeks
+.geeksIllustration:first-child {
+  padding-right: 2rem;
+}
+
+.project.geeks
+.geeksIllustration img {
+  width: 100%;
+  height: auto;
+}
+
+/* Grid */
+.Grid {}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.row img {
+  width: 33%;
+  height: auto;
+}
